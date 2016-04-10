@@ -1,3 +1,3 @@
-# Team TopherBot
+# Team MagBot
 
-Team TopherBot's implementation of the MagBot lab.
+Team MagBot's implementation of the Magpie Chatbox lab.

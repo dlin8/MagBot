@@ -32,16 +32,16 @@ public class Magpie2
 	{
 		String response = "";
 		if (statement.indexOf("no") >= 0)
-		{
-			response = "Why so negative?";
-		}
+            {
+                response = "Why so negative?";
+            }
 		else if (statement.indexOf("mother") >= 0
-				|| statement.indexOf("father") >= 0
-				|| statement.indexOf("sister") >= 0
-				|| statement.indexOf("brother") >= 0)
-		{
-			response = "Tell me more about your family.";
-		}
+                 || statement.indexOf("father") >= 0
+                 || statement.indexOf("sister") >= 0
+                 || statement.indexOf("brother") >= 0)
+            {
+                response = "Tell me more about your family.";
+            }
         
         else if (statement.indexOf("cat") >= 0
                  || statement.indexOf("dog") >= 0) {
@@ -69,9 +69,9 @@ public class Magpie2
             response = "Automatic merge failed; fix conflicts and then commit the result.";
         }
 		else
-		{
-			response = getRandomResponse();
-		}
+            {
+                response = getRandomResponse();
+            }
 		return response;
 	}
 
@@ -87,21 +87,21 @@ public class Magpie2
 		String response = "";
 		
 		if (whichResponse == 0)
-		{
-			response = "Interesting, tell me more.";
-		}
+            {
+                response = "Interesting, tell me more.";
+            }
 		else if (whichResponse == 1)
-		{
-			response = "Hmmm.";
-		}
+            {
+                response = "Hmmm.";
+            }
 		else if (whichResponse == 2)
-		{
-			response = "Do you really think so?";
-		}
+            {
+                response = "Do you really think so?";
+            }
 		else if (whichResponse == 3)
-		{
-			response = "You don't say.";
-		}
+            {
+                response = "You don't say.";
+            }
         else if (whichResponse == 4) {
             response = "How insightful.";
         }

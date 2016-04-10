@@ -42,6 +42,32 @@ public class Magpie2
 		{
 			response = "Tell me more about your family.";
 		}
+        
+        else if (statement.indexOf("cat") >= 0
+                 || statement.indexOf("dog") >= 0) {
+            response = "Tell me more about your pets.";
+        }
+        else if (statement.indexOf("TBM") >= 0
+                 || statement.indexOf("Mr. Brown") >= 0
+                 || statement.indexOf("Mykolyk") >= 0) {
+            response = "I wholeheartedly approve of this man with the handsome "
+                + "beard you speak of.";
+        }
+        else if (statement.trim().equals("")) {
+            response = "Why do you remain silent? Is it something I said?";
+        }
+        else if (statement.indexOf("recursion") >= 0) {
+            response = "To understand recursion, you must first understand recursion.";
+        }
+        else if (statement.indexOf("magbot") >= 0) {
+            response = "Are you referring to the inferior bot?";
+        }
+        else if (statement.indexOf("typecasting") >= 0) {
+            response = "I was instructed to denounce this 'typecasting'.";
+        }
+        else if (statement.indexOf("git") >= 0) {
+            response = "Automatic merge failed; fix conflicts and then commit the result.";
+        }
 		else
 		{
 			response = getRandomResponse();
@@ -55,7 +81,7 @@ public class Magpie2
 	 */
 	private String getRandomResponse()
 	{
-		final int NUMBER_OF_RESPONSES = 4;
+		final int NUMBER_OF_RESPONSES = 6;
 		double r = Math.random();
 		int whichResponse = (int)(r * NUMBER_OF_RESPONSES);
 		String response = "";
@@ -76,6 +102,12 @@ public class Magpie2
 		{
 			response = "You don't say.";
 		}
+        else if (whichResponse == 4) {
+            response = "How insightful.";
+        }
+        else if (whichResponse == 5) {
+            response = "Please, do go on.";
+        }
 
 		return response;
 	}
